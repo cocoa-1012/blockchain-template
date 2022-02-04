@@ -1,9 +1,11 @@
 import logoImg from "../assets/images/logo.png";
 import searchImg from "../assets/images/search.png";
+// import { Light } from "./Light";
 export const Header = () => {
   return (
     <div className="absolute flex justify-between w-full items-center p-4">
       <img className="w-[100px] cursor-pointer" src={logoImg} alt="logo" />
+      {/* <Light /> */}
       <div className="relative">
         <img
           src={searchImg}
