@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 
-export const Light = ({ crdX, crdY, duration }) => {
+export const Light = ({ crdX, crdY, duration, value }) => {
   console.log("ssss===>>", crdX, crdY, duration);
   return (
     <div className={`relative mt-4 ml-48`}>
       <div
         className={`absolute w-[2px] h-[100px] bg-[#56bdcf] bottom-0 right-1`}
       >
-        <p className="absolute text-[#72f2ff] top-[-30px] left-[-10px] font-bold text-xl tracking-[-0.1em]">
-          <span className="font-normal">&#x25EF;&nbsp;&nbsp;</span>25.01
+        <p className="absolute text-[#72f2ff] top-[-30px] left-[-10px] font-bold text-[18px] tracking-[-0.1em]">
+          <span className="font-normal">&#x25EF;&nbsp;&nbsp;</span>
+          {value}
         </p>
       </div>
       <motion.div
@@ -22,7 +23,7 @@ export const Light = ({ crdX, crdY, duration }) => {
           ],
         }}
         transition={{
-          duration: 3,
+          duration: duration,
           ease: "easeInOut",
           times: [0, 0.5, 1],
           repeat: Infinity,

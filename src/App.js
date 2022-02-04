@@ -8,36 +8,42 @@ const points = [
     crdX: 4,
     crdY: 2,
     duration: 2,
+    value: 25.01,
   },
   {
     id: 1,
     crdX: 8,
     crdY: 12,
     duration: 3,
+    value: 18.75,
   },
   {
     id: 2,
     crdX: 12,
     crdY: 8,
     duration: 4,
+    value: 7.18,
   },
   {
     id: 3,
     crdX: 16,
     crdY: 12,
     duration: 5,
+    value: 22.1,
   },
   {
     id: 4,
     crdX: 24,
     crdY: 10,
     duration: 6,
+    value: 24.78,
   },
   {
     id: 4,
     crdX: 24,
     crdY: 10,
     duration: 6,
+    value: 30.12,
   },
 ];
 function App() {
@@ -51,6 +57,7 @@ function App() {
             crdX={item.crdX}
             crdY={item.crdY}
             duration={item.duration}
+            value={item.value}
           />
         ))}
       </div>
