@@ -7,11 +7,15 @@ export const Light = ({ crdX, crdY, duration }) => {
     <div className={`relative mt-4 ml-48`}>
       <div
         className={`absolute w-[2px] h-[100px] bg-[#56bdcf] bottom-0 right-2`}
-      ></div>
+      >
+        <p className="absolute text-[#72f2ff] top-[-30px] left-[-10px] font-bold text-xl tracking-[-0.1em]">
+          <span className="font-normal">&#x25EF;&nbsp;&nbsp;</span>25.01
+        </p>
+      </div>
       <motion.div
-        className={`bg-gradient-radial drop-shadow-[0_0_0_rgba(44,253,254,1)] w-[20px] h-[16px] rounded-[50%]`}
+        className={`bg-gradient-radial drop-shadow-[0_0_0_rgba(44,253,254,1)] w-[16px] h-[10px] rounded-[50%]`}
         animate={{
-          scale: [1, 1.5, 1],
+          scale: [1, 1.8, 1],
           boxShadow: ["0 0 10px white", "0 0 20px white", "0 0 10px white"],
         }}
         transition={{
