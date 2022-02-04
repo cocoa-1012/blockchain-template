@@ -16,7 +16,7 @@ export const Light = ({ crdX, crdY, duration, value }) => {
         className={`bg-gradient-radial drop-shadow-[0_0_5px_#00fbfe] w-[12px] h-[8px] rounded-[50%]`}
         animate={{
           scale: [1, 1.5, 1],
-          boxShadow: ["0 0 5px #00fbfe", "0 0 20px #00fbfe", "0 0 5px #00fbfe"],
+          boxShadow: ["0 0 5px #00fbfe", "0 0 30px #ccccfe", "0 0 5px #00fbfe"],
         }}
         transition={{
           duration: duration,
